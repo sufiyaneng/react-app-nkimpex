@@ -1,0 +1,9 @@
+.contacth2{
+    color: #2c3e50 ;
+}
+.formControl:focus-visible{
+    border-color: transparent;
+    border: none;
+    
+  }
+  

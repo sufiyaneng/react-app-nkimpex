@@ -1,0 +1,16 @@
+.icon{
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.icon:hover{
+background-color: white;
+color: #2c3e50;
+}
