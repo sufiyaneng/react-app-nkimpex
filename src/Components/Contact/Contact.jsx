@@ -11,7 +11,7 @@ export default function Contact() {
   const [phoneError,setPhoneError]=useState(false)
   function registHandel(e){
     e.preventDefault()
-    if(name.length<3|| phone.length==11||email.length<8){
+    if(name.length<3|| phone.length===11||email.length<8){
     alert('Success')
     }else{
       alert('invalid')
