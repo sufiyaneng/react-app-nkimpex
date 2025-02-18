@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+
 import Layout from './Components/Layout/Layout';
 import { createHashRouter ,RouterProvider } from 'react-router-dom';
 import Home from './Components/Home/Home';
@@ -7,6 +6,7 @@ import Portfolio from './Components/Portfolio/Portfolio';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
+import './App.css';
 
 
 let routers=createHashRouter([{
