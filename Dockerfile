@@ -1,17 +1,14 @@
-# Use official Nginx image
-FROM nginx:alpine
+FROM nginx:latest
 
-# Set working directory
-WORKDIR /usr/share/nginx/html
+# Copy the React build files
+COPY build /usr/share/nginx/html
 
-# Remove default Nginx static assets
-RUN rm -rf ./*
-
-# Copy React build files to Nginx HTML directory
-COPY build/ .
+# Copy custom NGINX configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 80
 EXPOSE 80
 
-# Start Nginx
+# Start NGINX
 CMD ["nginx", "-g", "daemon off;"]
+
