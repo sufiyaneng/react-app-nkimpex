@@ -7,7 +7,8 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY build /usr/share/nginx/html
 
 # Copy custom NGINX configuration
-COPY nginx.conf /etc/nginx/nginx.conf  # ✅ Copy to correct location
+COPY ./nginx.conf /etc/nginx/nginx.conf
+
 
 # Expose port 80
 EXPOSE 80
